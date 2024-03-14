@@ -13,8 +13,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14'
-      - name: Change directory to the root of the repository
-        run: cd $GITHUB_WORKSPACE/iois-lpnu
       - name: Install dependencies
         run: npm install --prefix mantis-free-react-admin-template
       - name: Build
